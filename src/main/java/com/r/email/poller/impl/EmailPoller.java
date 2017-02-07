@@ -50,6 +50,12 @@ public class EmailPoller implements IEmailPoller, Runnable {
 	private final Log log = LogFactory.getLog(EmailPoller.class);
 
 	/**
+	 * Default constructor
+	 */
+	public EmailPoller() {
+	}
+
+	/**
 	 * Email poller constructor
 	 * 
 	 * @param protocol
