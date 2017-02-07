@@ -52,7 +52,7 @@ public class EmailPoller implements IEmailPoller, Runnable {
 	/**
 	 * Default constructor
 	 */
-	public EmailPoller() {
+	private EmailPoller() {
 	}
 
 	/**
