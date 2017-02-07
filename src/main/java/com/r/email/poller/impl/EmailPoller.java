@@ -160,6 +160,7 @@ public class EmailPoller implements IEmailPoller, Runnable {
 	@Override
 	public void stop() {
 		processEmailPolling = Boolean.FALSE;
+		restartEmailPolling = Boolean.FALSE;
 	}
 
 	/**
@@ -228,6 +229,7 @@ public class EmailPoller implements IEmailPoller, Runnable {
 
 			if (restartEmailPolling) {
 				processEmailPolling = Boolean.TRUE;
+				restartEmailPolling = Boolean.FALSE;
 				startProcess();
 			}
 		} catch (Exception ex) {
