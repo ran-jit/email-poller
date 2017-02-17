@@ -87,4 +87,5 @@ public interface IEmailPoller {
 	 * @param emailActionFactory
 	 */
 	public void setEmailActionFactory(IEmailMessageActionFactory emailActionFactory);
+
 }

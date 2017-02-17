@@ -50,5 +50,4 @@ public class EmailPollerTest2 {
 				emailPoller.start();
 		}
 	}
-
 }

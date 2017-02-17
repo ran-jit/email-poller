@@ -397,4 +397,5 @@ public class EmailPoller implements IEmailPoller, Runnable {
 		if (store != null)
 			store.close();
 	}
+
 }

@@ -36,5 +36,4 @@ public class EmailPollerTest1 {
 				emailPoller.start();
 		}
 	}
-
 }
