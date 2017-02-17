@@ -18,7 +18,7 @@ Based on the above credentials, email poller system reads the unread email messa
 Email Message Action Factory is to define the email actions based on the custom filters (example: Email subject contains "Process") to assign the filter handler. Since using the handler, the email poller process the request operation/post action.
 
 #### Example:
-Examples are committed in test package.
+  * Examples are committed in test package.
 
 #### Note:
-The POP3 server does not keep the email flag (read/unread) information. Whenever we are initiating the search request in email server, returns all the email messages. Due to this reason, the email poller system supports only IMAP server accounts.
+  * The POP3 server does not keep the email flag (read/unread) information. Whenever we are initiating the search request in email server, returns all the email messages. Due to this reason, the email poller system supports only IMAP server accounts.
