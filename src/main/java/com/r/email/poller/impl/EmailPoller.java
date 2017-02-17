@@ -50,12 +50,6 @@ public class EmailPoller implements IEmailPoller, Runnable {
 	private final Log log = LogFactory.getLog(EmailPoller.class);
 
 	/**
-	 * Default constructor
-	 */
-	private EmailPoller() {
-	}
-
-	/**
 	 * Email poller constructor
 	 * 
 	 * @param protocol
@@ -144,6 +138,74 @@ public class EmailPoller implements IEmailPoller, Runnable {
 			String lookupFolder, int consumerDelay, IEmailMessageActionFactory emailActionFactory) {
 		initialize(protocol, host, port, tlsEnabled, username, password, lookupFolder, consumerDelay,
 				emailActionFactory);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void setPort(int port) {
+		this.port = port;
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void setConsumerDelay(int consumerDelay) {
+		this.consumerDelay = consumerDelay;
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void setProtocol(String protocol) {
+		this.protocol = protocol;
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void setHost(String host) {
+		this.host = host;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void setLookupFolder(String lookupFolder) {
+		this.lookupFolder = lookupFolder;
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void setTlsEnabled(Boolean tlsEnabled) {
+		this.tlsEnabled = tlsEnabled;
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void setEmailActionFactory(IEmailMessageActionFactory emailActionFactory) {
+		this.emailActionFactory = emailActionFactory;
 	}
 
 	@Override
