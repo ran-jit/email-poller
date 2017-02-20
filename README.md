@@ -16,7 +16,7 @@ The following inputs are required for email polling actions,
   6. TLS Enabled - Email TLS configuration (default: false)
   7. Email Message Action Factory – Factory to process the email message actions
 
-Based on the above credentials, email poller system reads the unread email messages from the specified account and forward the request to Email Message Action Factory and the factory.
+Based on the above credentials, email poller system reads the unread email messages from the specified account and forward the request to Email Message Action Factory.
 
 Email Message Action Factory is to define the email actions based on the custom filters (example: Email subject contains "Process") to assign the filter handler. Since using the handler, the email poller process the request operation/post action.
 
