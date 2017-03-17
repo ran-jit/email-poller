@@ -1,4 +1,4 @@
-# EmailPoller
+# Email Poller
 
 Email Poller is the process of automatically reading the unread emails from specified email account in certain period of interval to perform some operation dynamically.
 
