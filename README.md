@@ -4,7 +4,7 @@ Email Poller is the process of automatically reading the unread emails from spec
 
 **Email Poller is available in below location**
   
-    https://github.com/ran-jit/EmailPoller/wiki
+    https://github.com/ran-jit/email-poller/wiki
 
 ## How it works
 The following inputs are required for email polling actions,
