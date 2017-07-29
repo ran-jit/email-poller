@@ -1,4 +1,4 @@
-package com.r.email.poller.util;
+package email.poller.util;
 
 import java.io.IOException;
 
